@@ -1,0 +1,18 @@
+<section class="mural">
+  <div *ngFor="let vaga of vagas">
+    <div class="card border-info mb-3" style="width: 18rem">
+      <img
+        src="assets\img\Vagas\{{ vaga.foto }}"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Vaga: {{ vaga.nome }}</h5>
+        <p class="card-text">Descrição da Vaga: {{ vaga.descricao }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Salário: R${{ vaga.salario }},00</li>
+      </ul>
+    </div>
+  </div>
+</section>

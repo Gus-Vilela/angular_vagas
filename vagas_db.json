@@ -1,25 +1,25 @@
 {
-  "vagas":[
+  "vagas": [
     {
-      "id":1,
-      "nome":"Designer",
-      "foto":"designer.jpg",
-      "descricao":"Criação de Ilustrações para as Templates ",
-      "salario":4000 
+      "id": 1,
+      "nome": "Designer",
+      "foto": "designer.jpg",
+      "descricao": "Criação de Ilustrações para as Templates ",
+      "salario": 4000
     },
     {
-      "id":2,
-      "nome":"Gerente",
-      "foto":"gerente.jpg",
-      "descricao":"Gerenciar a equipe de desenvolvedores.",
-      "salario":6000
+      "id": 2,
+      "nome": "Gerente",
+      "foto": "gerente.jpg",
+      "descricao": "Gerenciar a equipe de desenvolvedores.",
+      "salario": 6000
     },
     {
-      "id":3,
-      "nome":"Desenvolvedor FrontEnd",
-      "foto":"desenvolvedor.jpg",
-      "descricao":"Trabalhar com Typescript e Angular",
-      "salario":5000
+      "id": 3,
+      "nome": "Desenvolvedor FrontEnd",
+      "foto": "desenvolvedor.jpg",
+      "descricao": "Trabalhar com Typescript e Angular",
+      "salario": 5000
     }
   ]
 }

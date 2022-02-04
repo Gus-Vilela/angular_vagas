@@ -1,1 +1,88 @@
-<p>painel-vagas works!</p>
+<section class="formu">
+  <div align="center"><h2>Cadastrar Vaga</h2></div>
+  <br />
+  <div align="center">
+    <form>
+      <table align="center">
+        <tr align="center">
+          <td><label>Id:</label></td>
+          <td><input type="text" name="id" [(ngModel)]="vaga.id" /></td>
+        </tr>
+        <tr align="center">
+          <td><label>Nome:</label></td>
+          <td>
+            <input type="text" name="nome" [(ngModel)]="vaga.nome" /><br />
+          </td>
+        </tr>
+        <tr align="center">
+          <td><label>Foto:</label></td>
+          <td>
+            <input type="text" name="foto" [(ngModel)]="vaga.foto" /><br />
+          </td>
+        </tr>
+        <tr align="center">
+          <td><label>Descrição:</label></td>
+          <td>
+            <input
+              type="text"
+              name="descricao"
+              [(ngModel)]="vaga.descricao"
+            /><br />
+          </td>
+        </tr>
+        <tr align="center">
+          <td><label>Salário:</label></td>
+          <td>
+            <input
+              type="text"
+              name="salario"
+              [(ngModel)]="vaga.salario"
+            /><br />
+          </td>
+        </tr>
+        <br />
+        <tr align="center">
+          <th colspan="2">
+            <button type="button" class="btn btn-dark" (click)="cadastrar()">
+              Cadastrar Vaga
+            </button>
+            &nbsp;
+            <button
+              type="button"
+              class="btn btn-dark"
+              (click)="atualizar(vaga.id)"
+            >
+              Atualizar Vaga</button
+            >&nbsp;
+            <button
+              type="button"
+              class="btn btn-dark"
+              (click)="excluir(vaga.id)"
+            >
+              Excluir Vaga
+            </button>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </div>
+</section>
+<section class="mural">
+  <div *ngFor="let vaga of vagas">
+    <div class="card border-info mb-3" style="width: 18rem">
+      <img
+        src="assets\img\Vagas\{{ vaga.foto }}"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Código da Vaga: {{ vaga.id }}</h5>
+        <h5 class="card-title">Vaga: {{ vaga.nome }}</h5>
+        <p class="card-text">Descrição da Vaga: {{ vaga.descricao }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Salário: R${{ vaga.salario }},00</li>
+      </ul>
+    </div>
+  </div>
+</section>
